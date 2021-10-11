@@ -1,0 +1,10 @@
+/gwt-unitCache/
+/war/gfatmweb/
+/war/WEB-INF/deploy/
+/doc/
+/gfatmweb.war
+/.settings/
+/.classpath
+/war/tbreach_api.log
+*.class
+/bin/

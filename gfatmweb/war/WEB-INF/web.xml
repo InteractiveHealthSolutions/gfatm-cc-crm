@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+
+	<!-- Servlets -->
+	<servlet>
+		<servlet-name>greetServlet</servlet-name>
+		<servlet-class>com.ihsinformatics.gfatmweb.server.GreetingServiceImpl</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>greetServlet</servlet-name>
+		<url-pattern>/gfatmweb/greet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>aicWebService</servlet-name>
+		<servlet-class>com.ihsinformatics.gfatmweb.server.AicWebService</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>aicWebService</servlet-name>
+		<url-pattern>/aicwebservice</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>callCenterWebService</servlet-name>
+		<servlet-class>com.ihsinformatics.gfatmweb.server.CallCenterWebService</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+	    <servlet-name>callCenterWebService</servlet-name>
+	    <url-pattern>/callCenterWebService</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+		<servlet-name>fastWebService</servlet-name>
+		<servlet-class>com.ihsinformatics.gfatmweb.server.FastWebService</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>fastWebService</servlet-name>
+		<url-pattern>/fastwebservice</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>gfatmTasksWebService</servlet-name>
+	    <servlet-class>com.ihsinformatics.gfatmweb.server.GfatmTasksWebService</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>gfatmTasksWebService</servlet-name>
+	    <url-pattern>/gfatmTasksWebService</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Default page to serve -->
+	<welcome-file-list>
+		<welcome-file>Gfatmweb.html</welcome-file>
+		<welcome-file>aicweb.jsp</welcome-file>
+		<welcome-file>fastweb.jsp</welcome-file>
+		<welcome-file>callcenterweb.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
